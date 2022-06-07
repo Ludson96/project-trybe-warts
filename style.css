@@ -11,3 +11,8 @@
 #learn-options {
   display: flex;
 }
+
+#comment textarea {
+  width: 100%;
+  resize: none;
+}
