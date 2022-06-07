@@ -3,11 +3,25 @@
   flex-direction: column;
 }
 
-#label-content {
-  display: block;
+#learn-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#checked-content {
+  display: flex;
 }
 
 #comment textarea {
   width: 100%;
   resize: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
