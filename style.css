@@ -4,3 +4,9 @@
   width: 100%;
   height: 100px;
 }
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
