@@ -19,7 +19,7 @@
 
       <section id="learn-content">
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <section id="learn-options">
+        
           <input class="subject" type="checkbox" name="HoFs" id="HoFs" value="HoFs">
           <label for="HoFs">HoFs</label>
           
@@ -37,7 +37,6 @@
           
           <input class="subject" type="checkbox" name="Python" id="Python" value="Python">
           <label for="Python">Python</label>
-        </section>
       </section>
     </section>
 
@@ -57,10 +56,17 @@
       </section>
 
       <section id="comment">
-        <label for="text">Deixe seu comentário:</label>
-        <textarea name="comment" id="text" maxlength="500"></textarea>
+        <label class="textarea" for="text">Deixe seu comentário:</label>
+        <textarea name="comment" id="textarea" maxlength="500"></textarea>
+
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="agreement" id="agreement">
       </section>
+
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
     </section>
   </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
