@@ -19,7 +19,7 @@
 
       <input type="password" name="password" placeholder="Senha" id="psw">
 
-      <button type="submit" value="Entrar" id="btn-submit" onclick="return valida()">Entrar</button>
+      <button type="submit" value="Entrar" id="btn-submit">Entrar</button>
 
     </form>
 
@@ -103,9 +103,10 @@
             <input type="radio" name="rate" id="rate10" value="10"><label for="rate10">10</label>
           </section>
 
-          <section id="comment">
-            <label class="textarea" for="text">Deixe seu comentário:</label>
-            <textarea name="comment" id="textarea" maxlength="500"></textarea>
+        <section id="comment">
+          <label class="textarea" for="text">Deixe seu comentário:</label>
+          <textarea name="comment" id="textarea" maxlength="500"></textarea>
+          <p id="counter" value="500">500</p>
 
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" name="agreement" id="agreement">
