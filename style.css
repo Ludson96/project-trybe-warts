@@ -12,14 +12,30 @@
   width: 180px;
 }
 
+#container-main {
+  display: flex;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-self: stretch;
 }
 
-#container-main {
+#input-name {
+  width: 100px;
+}
+
+#input-lastname {
+  width: 100px;
   display: flex;
+  flex-direction: row;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  order: 1;
 }
 
 #familys-content {
