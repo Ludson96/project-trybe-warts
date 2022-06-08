@@ -16,6 +16,9 @@ getSub.addEventListener('click', valida);
 
 const agreement = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const maxLetters = textArea.maxLength;
 
 function btnValidation() {
   if (agreement.checked) {
@@ -25,4 +28,12 @@ function btnValidation() {
   }
 }
 
+function textCounter() {
+  const letters = textArea.value.length;
+  const counterLetters = maxLetters - letters;
+  counter.setAttribute('value', counterLetters);
+  counter.innerHTML = counterLetters;
+}
+
 agreement.addEventListener('click', btnValidation);
+textArea.addEventListener('keyup', textCounter);
