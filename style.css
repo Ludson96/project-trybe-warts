@@ -68,3 +68,16 @@
   left: 0;
   width: 100%;
 }
+
+#form-data {
+  display: none;
+  flex-direction: column;
+}
+
+#container-none {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50%;
+  margin-top: 10px;
+}
