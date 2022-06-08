@@ -14,24 +14,26 @@
 
 #container-main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  /* width: 675px; */
+  max-width: 30%;
   flex-direction: column;
-  align-self: stretch;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#input-name {
-  width: 100px;
+/* #input-name {
+  width: 50%;
 }
 
 #input-lastname {
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-}
+  width: 50%;
+} */
 
 #trybewarts-forms-logo {
   height: 500px;
