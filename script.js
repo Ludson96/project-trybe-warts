@@ -46,7 +46,6 @@ const retFamily = document.getElementById('family-return');
 const retMateria = document.getElementById('materia-return');
 const retAva = document.getElementById('ava-return');
 const retObs = document.getElementById('obs-return');
-// const logo = document.getElementById('trybewarts-forms-logo');
 const getNone = document.getElementById('container-none');
 const button = document.getElementById('button');
 const form = document.getElementById('form-data');
@@ -70,6 +69,6 @@ function returnValue(event) {
   form.style.order = '0';
 }
 
-button.addEventListener('click', returnValue);
+btnSubmit.addEventListener('click', returnValue);
 
 textArea.addEventListener('keyup', textCounter);
