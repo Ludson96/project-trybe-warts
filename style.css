@@ -12,6 +12,16 @@
   width: 180px;
 }
 
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#container-main {
+  display: flex;
+}
+
 #familys-content {
   display: flex;
   flex-direction: column;
