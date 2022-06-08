@@ -38,7 +38,6 @@ function textCounter() {
 
 agreement.addEventListener('click', btnValidation);
 
-
 const retName = document.getElementById('name-return');
 const retEmail = document.getElementById('email-return');
 const retHouse = document.getElementById('house-return');
@@ -47,7 +46,6 @@ const retMateria = document.getElementById('materia-return');
 const retAva = document.getElementById('ava-return');
 const retObs = document.getElementById('obs-return');
 const getNone = document.getElementById('container-none');
-const button = document.getElementById('button');
 const form = document.getElementById('form-data');
 const getName = document.getElementById('input-name');
 const getLast = document.getElementById('input-lastname');
@@ -55,15 +53,44 @@ const getEmail = document.getElementById('input-email');
 const getgouse = document.getElementById('house');
 const getTextarea = document.getElementById('textarea');
 
+function verificaRadio() {
+  const radios = document.getElementsByName('family');
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      return radios[index].value;
+    }
+  }
+}
+
+function verificaCheckbox() {
+  const arrayBox = [];
+  const checkBox = document.getElementsByName('learns-options');
+  for (let index = 0; index < checkBox.length; index += 1) {
+    if (checkBox[index].checked) {
+      arrayBox.push(checkBox[index].value);
+    }
+  }
+  return arrayBox.join(', ');
+}
+
+function verificaRate() {
+  const rates = document.getElementsByName('rate');
+  for (let index = 0; index < rates.length; index += 1) {
+    if (rates[index].checked) {
+      return rates[index].value;
+    }
+  }
+}
+
 function returnValue(event) {
   getNone.style.display = 'none';
   event.preventDefault();
   retName.innerText = `${getName.value} ${getLast.value}`;
   retEmail.innerText = getEmail.value;
   retHouse.innerText = getgouse.value;
-  // retFamily.innerText =
-  // retMateria.innerText =
-  // retAva.innerText =
+  retFamily.innerText = verificaRadio();
+  retMateria.innerText = verificaCheckbox();
+  retAva.innerText = verificaRate();
   retObs.innerText = getTextarea.value;
   form.style.display = 'flex';
   form.style.order = '0';
