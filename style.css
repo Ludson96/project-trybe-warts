@@ -10,3 +10,31 @@
   flex-direction: column;
   width: 180px;
 }
+
+#familys-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#learn-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#checked-content {
+  display: flex;
+}
+
+#comment textarea {
+  width: 100%;
+  resize: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
