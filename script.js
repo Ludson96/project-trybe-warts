@@ -15,6 +15,7 @@ function valida() {
 
 getSub.addEventListener('click', valida);
 
+const colorheader = document.querySelector('.header');
 const agreement = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 const textArea = document.querySelector('#textarea');
@@ -24,8 +25,10 @@ const maxLetters = textArea.maxLength;
 function btnValidation() {
   if (agreement.checked) {
     btnSubmit.removeAttribute('disabled');
+    btnSubmit.style.backgroundColor = '#8B187B';
   } else {
     btnSubmit.setAttribute('disabled', 'true');
+    btnSubmit.style.backgroundColor = '#8A8887';
   }
 }
 
@@ -33,7 +36,7 @@ function textCounter() {
   const letters = textArea.value.length;
   const counterLetters = maxLetters - letters;
   counter.setAttribute('value', counterLetters);
-  counter.innerHTML = counterLetters;
+  counter.innerHTML = `${counterLetters} caracteres restantes`;
 }
 
 agreement.addEventListener('click', btnValidation);
@@ -52,6 +55,7 @@ const getLast = document.getElementById('input-lastname');
 const getEmail = document.getElementById('input-email');
 const getgouse = document.getElementById('house');
 const getTextarea = document.getElementById('textarea');
+const getForm = document.getElementById('evaluation-form');
 
 function verificaRadio() {
   const radios = document.getElementsByName('family');
@@ -82,8 +86,16 @@ function verificaRate() {
   }
 }
 
+// function colorHouse() {
+//   if(getgouse.value === 'Gitnória') {
+//     colorheader.style.backgroundColor = '#FF5733';
+//   }else if(getgouse.value === 'Corvinode') {
+//     colorheader.style.backgroundColor = '#2E9AFE';
+//   }
+// }
+
 function returnValue(event) {
-  getNone.style.display = 'none';
+  getForm.style.display = 'none';
   event.preventDefault();
   retName.innerText = `${getName.value} ${getLast.value}`;
   retEmail.innerText = getEmail.value;
@@ -97,5 +109,7 @@ function returnValue(event) {
 }
 
 btnSubmit.addEventListener('click', returnValue);
+
+getgouse.addEventListener('click', colorHouse);
 
 textArea.addEventListener('keyup', textCounter);
