@@ -1,4 +1,4 @@
-# Repositório do projeto Trybe Warts
+# Repositório do projeto Trybewarts Wizarding School! :mage:
 
 # :construction: Estilização em desenvolvimento ! :construction:
 
