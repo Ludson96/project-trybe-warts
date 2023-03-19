@@ -1,6 +1,6 @@
-# Repositório do projeto Trybewarts Wizarding School! :mage:
+# Repositório do projeto Trybewarts Wizarding School! 🧙🏽
 
-# :construction: Estilização em desenvolvimento ! :construction:
+# 🚧 Estilização em desenvolvimento ! 🚧
 
 ## Módulo: FUNDAMENTOS
 
